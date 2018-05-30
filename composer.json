@@ -1,6 +1,6 @@
 {
     "name": "grand/salesforce-freeform-web-to-lead",
-    "description": "Created by Grand Creative Ltd., Auckland",
+    "description": "Sales force extension for FreeForm Pro",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [
@@ -18,7 +18,7 @@
     "authors": [
         {
             "name": "Andy Karwal",
-            "homepage": "andykarwal.com"
+            "homepage": "https://andykarwal.com"
         }
     ],
     "require": {
