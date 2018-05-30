@@ -1,0 +1,40 @@
+{
+    "name": "grand/salesforce-freeform-web-to-lead",
+    "description": "Created by Grand Creative Ltd., Auckland",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "salesforce - freeform web to lead"
+    ],
+    "support": {
+        "docs": "https://github.com/andykarwal/salesforce-freeform-web-to-lead/blob/master/README.md",
+        "issues": "https://github.com/andykarwal/salesforce-freeform-web-to-lead/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Karwal",
+            "homepage": "andykarwal.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "grand\\salesforcefreeformwebtolead\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Salesforce - Freeform Web to Lead",
+        "handle": "salesforce-freeform-web-to-lead",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/andykarwal/salesforce-freeform-web-to-lead/master/CHANGELOG.md",
+        "class": "grand\\salesforcefreeformwebtolead\\SalesforceFreeformWebToLead"
+    }
+}
