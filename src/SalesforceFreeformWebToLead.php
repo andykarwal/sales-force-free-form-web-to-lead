@@ -108,7 +108,8 @@ class SalesforceFreeformWebToLead extends Plugin
         );
 
         Event::on(FormsService::class, FormsService::EVENT_BEFORE_SUBMIT,
-            function () {
+            function ($event) {
+
                 $request = $_REQUEST["p"];
 
                 $listFormsSalesforce = array(
@@ -128,7 +129,11 @@ class SalesforceFreeformWebToLead extends Plugin
                     $fieldstring = "";
 
                     foreach ($sffields as $key => $value) {
-                        $fieldstring .= $key . '=' . $value . '&';
+                        if(is_array($value)) {
+                            $fieldstring .= $key . '=' . implode("','", $value) . '&';
+                        } else {
+                            $fieldstring .= $key . '=' . $value . '&';
+                        }
                     }
                     rtrim($fieldstring, '&');
 
