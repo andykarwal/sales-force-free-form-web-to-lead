@@ -108,8 +108,7 @@ class SalesforceFreeformWebToLead extends Plugin
         );
 
         Event::on(FormsService::class, FormsService::EVENT_BEFORE_SUBMIT,
-            function ($event) {
-
+            function () {
                 $request = $_REQUEST["p"];
 
                 $listFormsSalesforce = array(
